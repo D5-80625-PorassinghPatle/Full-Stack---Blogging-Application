@@ -45,7 +45,6 @@ export class AuthService {
       await this.account.get();
     } catch (error) {
       console.log("aapwrite service :: getCurrentUser :: error", error);
-      throw error;
     }
     return null;
   }

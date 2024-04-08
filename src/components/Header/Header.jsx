@@ -3,7 +3,7 @@ import Container from "../Container/Container";
 import LogoutBtn from "./LogoutBtn";
 import Logo from "../Logo";
 import { Link, useNavigate } from "react-router-dom";
-import { UseSelector, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { UNSAFE_NavigationContext } from "react-router-dom";
 export default function Header() {
   const authStatus = useSelector((state) => state.auth.status);
